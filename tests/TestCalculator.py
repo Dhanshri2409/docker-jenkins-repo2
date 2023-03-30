@@ -16,13 +16,14 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(Calculator.multiply(2, 3), 6)
         self.assertEqual(Calculator.multiply(-1, 1), -1)
         self.assertEqual(Calculator.multiply(-1, -1), 1)
-
+        
     def test_division(self):
         self.assertEqual(Calculator.divide(4, 2), 2)
         self.assertRaises(ZeroDivisionError, Calculator.divide, 1, 0)
+        print('inside test authentications..division')
 
     def test_authentication(self):
-        pass
+        print('inside test authentications')
 
 if __name__ == '__main__':
     unittest.main()
